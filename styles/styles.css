@@ -1,15 +1,23 @@
 :root {
+    /* текст */
     --first-text-color: #212121;
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
+    --black-color: #000000;
+    --wcolor: #ECECEC;
+    --text-footer-color: rgba(255, 255, 255, 0.6);
+    --address-text-color: #FFFFFF;
+
+    /* фон */
     --main-backgraund-color: #FFFFFF;
     --secondary-background-color: #2F303A;
+    --team-backgraund-color: #F5F4FA;
 }
 
 body {
     background-color: var(--main-backgraund-color);
     width: 1600px;
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: var(--first-text-color);
 }
 
@@ -28,7 +36,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.2;
 }
 
 .logo>.web {
@@ -52,17 +60,22 @@ ul {
 .hero>.hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--address-text-color);
 }
 
 .hero>.hero-button {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--address-text-color);
     border-color: var(--accent-color);
 }
 
@@ -74,7 +87,7 @@ ul {
 .feature-list .title {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -82,7 +95,7 @@ ul {
 .feature-list .description {
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
@@ -91,7 +104,7 @@ ul {
 .subject {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -102,4 +115,84 @@ ul {
 
 .footer-logo {
     color: var(--main-backgraund-color);
+}
+/* Команда */
+.team {
+    background-color: var(--team-backgraund-color);
+}
+.team-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+}
+.team-item-name {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-align: center;
+}
+.team-item {
+    background-color: var(--main-backgraund-color);
+}
+.team-item-position {
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: var(--secondary-text-color)
+}
+/* Футер */
+footer {
+    background-color: var(--secondary-background-color);
+}
+.address {
+    font-style: normal;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color:var(--address-text-color);
+}
+address .contact {
+    font-style: normal;
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--text-footer-color);
+}
+address .contact:hover{
+    color: var(--address-text-color);
+}
+.filter-button {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        text-align: center;
+        letter-spacing: 0.03em;
+        background: var(--team-backgraund-color);
+        border-color:transparent;
+}
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--address-text-color);
+    background: var(--accent-color);
+    border-color: transparent;
+}
+.projects-item-name{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+}
+.projects-item-type{
+    font-weight: 400;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.03em;
+        color: var(--secondary-text-color);
 }
