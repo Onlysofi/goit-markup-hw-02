@@ -1,53 +1,105 @@
+:root {
+    --first-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --main-backgraund-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+}
+
 body {
-    background-color: #ECECEC;
+    background-color: var(--main-backgraund-color);
     width: 1600px;
     font-family: Roboto;
-    color: #212121;
+    color: var(--first-text-color);
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 ul {
     list-style: none;
 }
+
 /* шапка */
 .logo {
-font-family: 'Raleway';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
 }
-.logo > .web {
-        color: #2196F3;
-}
-.navigation {
-    
-}
-.contacts {
+
+.logo>.web {
+    color: var(--accent-color);
 
 }
+
+.navigation {}
+
+.contacts {}
+
+.nav-item.current {
+    color: var(--accent-color);
+}
+
 .nav-item:hover,
-.nav-item:focus{
-color: #2196F3;
+.nav-item:focus {
+    color: var(--accent-color);
 }
-.hero > .title {
+
+.hero>.hero-title {
     font-weight: 900;
-        font-size: 44px;
-        line-height: 60px;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        color: #FFFFFF;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
-.hero > .button {
-        background: #2196F3;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        color: #FFFFFF;
-        border: 0;
+
+.hero>.hero-button {
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    border-color: var(--accent-color);
 }
+
 .hero {
-    background-color: #2F303A;
+    background-color: var(--secondary-background-color);
 }
+
 /* Переваги */
+.feature-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.feature-list .description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+/* Чим ми займаємося */
+.subject {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subject-item {}
+
+
+.footer-logo {
+    color: var(--main-backgraund-color);
+}
