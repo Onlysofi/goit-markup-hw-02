@@ -19,16 +19,17 @@ body {
     width: 1600px;
     font-family: Roboto, sans-serif;
     color: var(--first-text-color);
+    font-weight: 400;
 }
 
-a {
+/* a {
     text-decoration: none;
     color: inherit;
-}
+} */
 
-ul {
+/* ul {
     list-style: none;
-}
+} */
 
 /* шапка */
 .logo {
@@ -37,16 +38,25 @@ ul {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .logo>.web {
     color: var(--accent-color);
-
+text-decoration: none;
 }
 
-.navigation {}
+.navigation {
+    list-style: none;
+}
 
-.contacts {}
+.nav-item {
+text-decoration: none;
+color: inherit;
+}
+.contacts {
+    list-style: none;
+}
 
 .nav-item.current {
     color: var(--accent-color);
@@ -77,6 +87,7 @@ ul {
     letter-spacing: 0.06em;
     color: var(--address-text-color);
     border-color: var(--accent-color);
+    cursor: pointer;
 }
 
 .hero {
@@ -84,6 +95,9 @@ ul {
 }
 
 /* Переваги */
+.feature-list {
+    list-style: none;
+}
 .feature-list .title {
     font-weight: 700;
     font-size: 14px;
@@ -93,7 +107,6 @@ ul {
 }
 
 .feature-list .description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -110,7 +123,9 @@ ul {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.subject-item {}
+.subject-list {
+    list-style: none;
+}
 
 
 .footer-logo {
@@ -120,12 +135,19 @@ ul {
 .team {
     background-color: var(--team-backgraund-color);
 }
+
 .team-title {
     font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
         letter-spacing: 0.03em;
+}
+.team-list {
+    list-style: none;
+}
+.team-item {
+    background-color: var(--main-backgraund-color);
 }
 .team-item-name {
     font-weight: 500;
@@ -134,11 +156,8 @@ ul {
         letter-spacing: 0.03em;
         text-align: center;
 }
-.team-item {
-    background-color: var(--main-backgraund-color);
-}
+
 .team-item-position {
-    font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
@@ -149,24 +168,31 @@ ul {
 footer {
     background-color: var(--secondary-background-color);
 }
+.address-list {
+    list-style: none;
+}
 .address {
     font-style: normal;
-    font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
         color:var(--address-text-color);
+        text-decoration: none;
 }
 address .contact {
     font-style: normal;
-    font-weight: 400;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: var(--text-footer-color);
+        text-decoration: none;
 }
 address .contact:hover{
     color: var(--address-text-color);
+}
+/* портфоліо */
+.button-list {
+    list-style: none;
 }
 .filter-button {
     font-weight: 500;
@@ -176,12 +202,16 @@ address .contact:hover{
         letter-spacing: 0.03em;
         background: var(--team-backgraund-color);
         border-color:transparent;
+        cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus {
     color: var(--address-text-color);
     background: var(--accent-color);
     border-color: transparent;
+}
+.projects {
+    list-style: none;
 }
 .projects-item-name{
     font-weight: 700;
@@ -190,9 +220,12 @@ address .contact:hover{
         letter-spacing: 0.06em;
 }
 .projects-item-type{
-    font-weight: 400;
         font-size: 16px;
         line-height: 1.875;
         letter-spacing: 0.03em;
         color: var(--secondary-text-color);
+}
+.projects-link {
+    text-decoration: none;
+    color: inherit;
 }
